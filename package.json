@@ -1,0 +1,29 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "concurrently npm:watch:css npm:watch:code",
+    "watch:code": "node build.mjs",
+    "watch:css": "tcm --watch src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@esbuilder/html": "^0.0.6",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "concurrently": "^8.2.0",
+    "esbuild": "^0.18.13",
+    "esbuild-css-modules-plugin": "^2.7.1",
+    "esbuild-plugin-html": "^1.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typed-css-modules": "^0.7.2"
+  }
+}
